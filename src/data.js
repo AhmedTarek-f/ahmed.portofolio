@@ -1,41 +1,28 @@
-export default Image;
-
-import Tools1 from "/assets/tools/androidstudio.svg";
-import Tools2 from "/assets/tools/flutter.svg";
-import Tools3 from "/assets/tools/dart.svg";
-import Tools4 from "/assets/tools/kotlin.png";
-import Tools5 from "/assets/tools/github.png";
-import Tools6 from "/assets/tools/firebase.png";
-import Tools7 from "/assets/tools/supabase.svg";
-import Tools8 from "/assets/tools/figma.png";
-import Tools9 from "/assets/tools/jira.svg";
-
-
 export const listTools = [
   {
     id: 1,
-    gambar: Tools1,
+    gambar: "./assets/tools/androidstudio.svg",
     nama: "Android Studio",
     ket: "Code Editor",
     dad: "100",
   },
   {
     id: 2,
-    gambar: Tools2,
+    gambar: "./assets/tools/flutter.svg",
     nama: "Flutter",
     ket: "Framework",
     dad: "200",
   },
   {
     id: 3,
-    gambar: Tools3,
+    gambar: "./assets/tools/dart.svg",
     nama: "Dart",
     ket: "Language",
     dad: "300",
   },
     {
     id: 4,
-    gambar: Tools4,
+    gambar: "./assets/tools/kotlin.png",
     nama: "Kotlin",
     ket: "Language",
     dad: "400",
@@ -43,28 +30,28 @@ export const listTools = [
   
   {
     id: 5,
-    gambar: Tools5,
+    gambar: "./assets/tools/github.png",
     nama: "Github",
     ket: "Repository",
     dad: "500",
   },
   {
     id: 6,
-    gambar: Tools6,
+    gambar: "./assets/tools/firebase.png",
     nama: "Firebase",
     ket: "Framework",
     dad: "600",
   },
   {
     id: 7,
-    gambar: Tools7,
+    gambar: "./assets/tools/supabase.svg",
     nama: "Supabase",
     ket: "Cloud Storage",
     dad: "700",
   },
   {
     id: 8,
-    gambar: Tools8,
+    gambar: "./assets/tools/figma.png",
     nama: "Figma",
     ket: "Design App",
     dad: "800",
@@ -72,24 +59,17 @@ export const listTools = [
 
   {
     id: 9,
-    gambar: Tools9,
+    gambar: "./assets/tools/jira.svg",
     nama: "Jira",
     ket: "Project Management",
     dad: "900",
   },
 ];
 
-import Proyek1 from "/assets/proyek/evently.png";
-import Proyek2 from "/assets/proyek/flowery.png";
-import Proyek3 from "/assets/proyek/islamy.png";
-import Proyek4 from "/assets/proyek/news.png";
-import Proyek5 from "/assets/proyek/spotify.png";
-import Proyek6 from "/assets/proyek/t-store.jpg";
-
 export const listProyek = [
   {
     id: 1,
-    image: Proyek1,
+    image: "./assets/proyek/evently.png",
     title: "Evently",
     subtitle: "Evently is a feature-rich event management and discovery...",
     fullDescription:"Evently is a feature-rich event management and discovery application built with Flutter. It allows users to explore events, participate, create, manage favorites, and navigate through an interactive map. With robust authentication, real-time updates, and support for themes and languages, Evently delivers a seamless and personalized user experience.",
@@ -100,7 +80,7 @@ export const listProyek = [
   },
   {
     id: 2,
-    image: Proyek2,
+    image: "./assets/proyek/flowery.png",
     title: "Flowery",
     subtitle: "Flowery is a Flutter-based e-commerce application designed...",
     fullDescription:"Flowery is a Flutter-based e-commerce application designed to simplify and enhance the online flower shopping experience, where users can easily buy or gift flowers from a wide variety of floral collections. With curated categories, best sellers, and occasion-based selections, Flowery makes finding the perfect bouquet seamless and enjoyable.",
@@ -111,7 +91,7 @@ export const listProyek = [
   },
   {
     id: 3,
-    image: Proyek3,
+    image: "./assets/proyek/islamy.png",
     title: "Islami",
     subtitle: "Islami is a beautifully designed Islamic application built...",
     fullDescription:"Islami is a beautifully designed Islamic application built using Flutter. It offers features like Quran reading, Hadith exploration, digital Sebha, Quran radio streaming, prayer times, and Azkar. The app's clean and intuitive UI ensures a smooth and engaging user experience.",
@@ -122,7 +102,7 @@ export const listProyek = [
   },
   {
     id: 4,
-    image: Proyek4,
+    image: "./assets/proyek/news.png",
     title: "News",
     subtitle: "News App is a sleek and powerful Flutter application that provides...",
     fullDescription:"News App is a sleek and powerful Flutter application that provides users with real-time news from across the globe. Featuring category-based navigation, source filtering, detailed views, and fast search with pagination, it ensures you’re always updated with the latest headlines.",
@@ -133,7 +113,7 @@ export const listProyek = [
   },
     {
     id: 5,
-    image: Proyek5,
+    image: "./assets/proyek/spotify.png",
     title: "Spotify Clone",
     subtitle: "Spotify is a dynamic music streaming application built using...",
     fullDescription:"Spotify is a dynamic music streaming application built using Flutter, offering features like playlist creation, user discovery, song playback, and social interaction. The app provides a seamless user experience with support for both light and dark themes.",
@@ -144,7 +124,7 @@ export const listProyek = [
   },
   {
     id: 6,
-    image: Proyek6,
+    image: "./assets/proyek/t-store.jpg",
     title: "T Store",
     subtitle: "T Store is a complete E-commerce application developed using...",
     fullDescription:"T Store is a complete E-commerce application developed using Flutter, offering a smooth shopping experience with features such as authentication, product browsing, wishlist, cart, checkout, and profile management. The app supports both light and dark themes and offers multi-language support (English and Arabic).",
