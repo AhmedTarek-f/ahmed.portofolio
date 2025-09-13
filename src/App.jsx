@@ -73,7 +73,7 @@ function App() {
 
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
-            <h1 className="text-5xl font-bold mb-6">
+            <h1 className="font-bold mb-6 whitespace-nowrap text-[clamp(1rem,5vw,2.5rem)]">
               <ShinyText text="Hi I'm Ahmed Tarek" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
@@ -81,7 +81,12 @@ function App() {
               delay={150}
               animateBy="words"
               direction="top"
-              className=" mb-6"
+              className="text-sm sm:text-base md:text-lg 
+                        leading-relaxed sm:leading-normal md:leading-relaxed 
+                        text-center sm:text-left 
+                        mx-auto sm:mx-0 
+                        mb-4 sm:mb-6
+                      "
             />
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
@@ -89,11 +94,31 @@ function App() {
                 download="Ahmed_Tarek_Flutter_Developer_CV.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
-                <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
+                <ShinyText text="Download CV" disabled={false} speed={3} 
+                className="text-sm sm:text-base md:text-lg lg:text-xl 
+                            font-semibold tracking-wide
+                            px-2 sm:px-3 md:px-4 
+                            py-1 sm:py-1.5 md:py-2 
+                            rounded-full
+                            text-center 
+                            block sm:inline-block
+                            whitespace-nowrap
+                          "
+                />
               </a>
 
               <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
-                <ShinyText text="Explore My Projects" disabled={false} speed={3} className="custom-class" />
+                <ShinyText text="Explore My Projects" disabled={false} speed={3} 
+                className="text-sm sm:text-base md:text-lg lg:text-xl 
+                            font-semibold tracking-wide
+                            px-2 sm:px-3 md:px-4 
+                            py-1 sm:py-1.5 md:py-2 
+                            rounded-full
+                            text-center 
+                            block sm:inline-block
+                            whitespace-nowrap
+                          "
+                />
               </a>
             </div>
 
@@ -129,27 +154,36 @@ function App() {
                   delay={150}
                   animateBy="words"
                   direction="top"
-                  className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
+                  className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed sm:leading-loose mb-6 sm:mb-8 md:mb-10 text-gray-300 text-center md:text-left"
                 />
 
-                <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
+                <div className="flex flex-col sm:flex-row items-center sm:justify-between 
+                                text-center sm:text-left gap-y-6 sm:gap-y-0 gap-x-6 
+                                mb-6 w-full">
                   <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
                       9<span className="text-violet-500">+</span>
                     </h1>
-                    <p>Project Finished</p>
+                    <p className="text-sm sm:text-base text-gray-300">Project Finished</p>
                   </div>
+
                   <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
                       2<span className="text-violet-500">+</span>
                     </h1>
-                    <p>Years of Experience</p>
+                    <p className="text-sm sm:text-base text-gray-300">Years of Experience</p>
                   </div>
-                  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
-                    <h1 className="text-3xl md:text-4xl mb-1">
+
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="1000" 
+                    data-aos-delay="600" 
+                    data-aos-once="true"
+                  >
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
                       3.23<span className="text-violet-500">/4.00</span>
                     </h1>
-                    <p>GPA</p>
+                    <p className="text-sm sm:text-base text-gray-300">GPA</p>
                   </div>
                 </div>
 
@@ -158,7 +192,7 @@ function App() {
                   text="Working with heart, creating with mind."
                   disabled={false}
                   speed={3}
-                  className="text-sm md:text-base text-violet-400"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-violet-400 text-center md:text-left"
                 />
               </div>
             </div>
@@ -242,13 +276,13 @@ function App() {
           </p>
 
           {/* Container dua kolom */}
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Contact Form di kanan */}
+          <div className="flex flex-col md:flex-row gap-8 w-full">
+            {/* Contact Form */}
             <div className="flex-1">
               <form
                 action="https://formsubmit.co/o0ahmedtarek0o@gmail.com"
                 method="POST"
-                className="bg-zinc-800 p-10 w-full rounded-md"
+                className="bg-zinc-800 p-6 sm:p-8 md:p-10 w-full rounded-md max-w-full"
                 autoComplete="off"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -256,44 +290,50 @@ function App() {
                 data-aos-once="true"
               >
                 <div className="flex flex-col gap-6">
+                  {/* Full Name */}
                   <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Full Name</label>
+                    <label className="font-semibold text-sm sm:text-base">Full Name</label>
                     <input
                       type="text"
                       name="Name"
                       placeholder="Input Name..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="border border-zinc-500 p-2 rounded-md text-sm sm:text-base"
                       required
                     />
                   </div>
+
+                  {/* Email */}
                   <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Email</label>
+                    <label className="font-semibold text-sm sm:text-base">Email</label>
                     <input
                       type="email"
                       name="Email"
                       placeholder="Input Email..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="border border-zinc-500 p-2 rounded-md text-sm sm:text-base"
                       required
                     />
                   </div>
+
+                  {/* Message */}
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-semibold">Message</label>
+                    <label htmlFor="message" className="font-semibold text-sm sm:text-base">Message</label>
                     <textarea
                       name="message"
                       id="message"
-                      cols="45"
-                      rows="7"
+                      rows="6"
                       placeholder="Message..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="border border-zinc-500 p-2 rounded-md text-sm sm:text-base"
                       required
                     ></textarea>
                   </div>
+
+                  {/* Submit Button */}
                   <div className="text-center">
                     <button
                       type="submit"
-                      className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors"
+                      className="font-semibold bg-[#1a1a1a] py-3 px-6 sm:px-8 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors"
                     >
-                      <ShinyText text="Send" disabled={false} speed={3} className="custom-class" />
+                      <ShinyText text="Send" disabled={false} speed={3} className="text-sm sm:text-base" />
                     </button>
                   </div>
                 </div>
