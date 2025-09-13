@@ -95,10 +95,10 @@ function App() {
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} 
-                className="text-sm sm:text-base md:text-lg lg:text-xl 
-                            font-semibold tracking-wide
-                            px-2 sm:px-3 md:px-4 
-                            py-1 sm:py-1.5 md:py-2 
+                className="text-xs sm:text-sm md:text-base 
+                            font-medium tracking-wide
+                            px-1.5 sm:px-2 md:px-3 
+                            py-0.5 sm:py-1 md:py-1.5 
                             rounded-full
                             text-center 
                             block sm:inline-block
@@ -109,10 +109,10 @@ function App() {
 
               <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
                 <ShinyText text="Explore My Projects" disabled={false} speed={3} 
-                className="text-sm sm:text-base md:text-lg lg:text-xl 
-                            font-semibold tracking-wide
-                            px-2 sm:px-3 md:px-4 
-                            py-1 sm:py-1.5 md:py-2 
+                className="text-xs sm:text-sm md:text-base 
+                            font-medium tracking-wide
+                            px-1.5 sm:px-2 md:px-3 
+                            py-0.5 sm:py-1 md:py-1.5 
                             rounded-full
                             text-center 
                             block sm:inline-block
@@ -123,7 +123,7 @@ function App() {
             </div>
 
           </div>
-          <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
+          <div className="hidden lg:block md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
               <ProfileCard
                 name=""
                 title=""
@@ -197,7 +197,7 @@ function App() {
               </div>
             </div>
              {/* Kolom kanan */}
-            <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
+            <div className="hidden lg:flex basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full justify-center">
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
             </div>
           </div>
