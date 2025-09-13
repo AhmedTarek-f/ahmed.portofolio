@@ -236,11 +236,11 @@ function App() {
         {/* tentang */}
 
         {/* Proyek */}
-        <div className="proyek mt-24" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
-        <div className="proyek-box mt-14" >
+        <div id="project"></div>
+        <h1 className="mt-24 text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-disable="mobile">Project</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" data-aos-disable="mobile">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
 
+        <div className="proyek-box mt-14" >
           <div className="hidden lg:block" style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
             <ChromaGrid
               items={listProyek}
