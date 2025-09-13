@@ -241,7 +241,7 @@ function App() {
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
         <div className="proyek-box mt-14" >
 
-          <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
+          <div className="hidden lg:block" style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
             <ChromaGrid
               items={listProyek}
               onItemClick={handleProjectClick}
@@ -250,6 +250,26 @@ function App() {
               fadeOut={0.6}
               ease="power3.out"
             />
+          </div>
+
+          {/* Mobile & tablet version (no effects) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
+            {listProyek.map((c, i) => (
+              <div 
+                key={i} 
+                className="rounded-xl shadow-md border p-4 cursor-pointer transition hover:shadow-lg"
+                onClick={() => handleProjectClick(c)}
+              >
+                <img 
+                  src={c.image} 
+                  alt={c.title} 
+                  className="w-full h-48 object-cover rounded-lg mb-3" 
+                  loading="lazy" 
+                />
+                <h3 className="text-lg font-semibold">{c.title}</h3>
+                {c.subtitle && <p className="text-sm opacity-70">{c.subtitle}</p>}
+              </div>
+            ))}
           </div>
         </div>
         {/* Proyek */}
