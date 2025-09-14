@@ -45,7 +45,7 @@ npm run build
 ---
 
 ## Quick Preview
-Once deployed (for example: GitHub Pages, Netlify, Vercel), you can add the live link here: 🔗 [View Live Demo](https://username.github.io/portofolio/).
+Once deployed (for example: GitHub Pages, Netlify, Vercel), you can add the live link here: 🔗 [View Live Demo](https://username.github.io/portfolio/).
 
 ---
 
