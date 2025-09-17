@@ -309,6 +309,7 @@ function App() {
                 data-aos-delay="500"
                 data-aos-once="true"
               >
+              <input type="hidden" name="_next" value="https://ahmedtarek-f.github.io/portfolio/" />
                 <div className="flex flex-col gap-6">
                   {/* Full Name */}
                   <div className="flex flex-col gap-2">
